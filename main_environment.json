@@ -1,0 +1,99 @@
+{
+	"id": "171e07f9-a238-473b-ad4c-8c468b99b4a5",
+	"name": "main",
+	"values": [
+		{
+			"key": "FirstName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "LastName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "FullName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "cpf",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Email",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Token",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "ProviderMail",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "CPFUser",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Mail",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "idUser",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomPass",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "boardId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "BoardName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "randomBoardName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Count",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-05-17T20:26:52.950Z",
+	"_postman_exported_using": "Postman/10.24.25"
+}
