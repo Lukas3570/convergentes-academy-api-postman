@@ -1,0 +1,35 @@
+name: Board API
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Check versions of Newman and Node
+        run: |
+          newman --version
+          node --version
+
+      - name: Install Newman-Reporter-HtmlExtra
+        run: sudo npm install -g newman-reporter-htmlextra
+
+      - name: Execute collection
+        run: newman run ./3-Board_collection.json -e main_environment.json -g postman_globals.json -r htmlextra --reporter-htmlextra-export ./report.html
+
+      - name: Archive production artifacts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: report
+          path: ./result/User.html
